@@ -93,55 +93,40 @@ function App() {
   const leaders = [
     {
       imgUrl: Josh,
-      linkedInUrl: '',
+      linkedInUrl: 'https://www.linkedin.com/in/josh-thompson-aa540717/',
       name: 'Josh Thompson',
       role: 'CEO',
     },
     {
       imgUrl: Joab,
-      linkedInUrl: '',
+      linkedInUrl: 'https://www.linkedin.com/in/joabble/',
       name: 'Joab Garza',
       role: 'CTO',
     },
     {
       imgUrl: Justin,
-      linkedInUrl: '',
+      linkedInUrl: 'https://www.linkedin.com/in/justinlally/',
       name: 'Justin Lally',
       role: 'CMO',
-    },
-  ]
-
-  const developers = [
-    {
-      imgUrl: Julian,
-      linkedInUrl: '',
-      name: 'Julian Andres Cuartas Gonzalez',
-      role: 'Senior Software Engineer',
-    },
-    {
-      imgUrl: Felipe,
-      linkedInUrl: '',
-      name: 'Felipe Marulanda',
-      role: 'Fullstack Developer',
     },
   ]
 
   const advisors1 = [
     {
       imgUrl: Jacob,
-      linkedInUrl: '',
+      linkedInUrl: 'https://www.instagram.com/jacobpbusch/?hl=en',
       name: 'Jacob Busch',
       role: 'Advisor',
     },
     {
       imgUrl: Gavin,
-      linkedInUrl: '',
+      linkedInUrl: 'https://www.google.com/search?client=firefox-b-1-d&q=gavin+maloof',
       name: 'Gavin Maloof',
       role: 'Advisor',
     },
     {
       imgUrl: Nick,
-      linkedInUrl: '',
+      linkedInUrl: 'https://www.linkedin.com/in/nick-wilson-0b95765/',
       name: 'Nick Wilson',
       role: 'Advisor',
     },
@@ -150,7 +135,7 @@ function App() {
   const advisors2= [
     {
       imgUrl: DJ,
-      linkedInUrl: '',
+      linkedInUrl: 'https://www.instagram.com/djlethalreal/?hl=en',
       name: 'DJ Lethal',
       role: 'Advisor',
     },
@@ -281,15 +266,6 @@ function App() {
           </div>
           <div className='flex flex-col md:flex-row justify-center items-center my-[3vh] gap-[6vw]'>
             {
-              developers.map((developer, i) => {
-                return(
-                  <Member key={i} {...developer}/> 
-                )
-              })
-            }
-          </div>
-          <div className='flex flex-col md:flex-row justify-center items-center my-[3vh] gap-[6vw]'>
-            {
               advisors1.map((advisor, i) => {
                 return(
                   <Member key={i} {...advisor}/> 
@@ -320,10 +296,21 @@ function App() {
         <div className='flex flex-col justify-center items-center my-[5vh]'>
           <span className='text-[28px] sm:text-[32px] font-semibold text-[#333333]'>Let the game begin!!!</span>
           <div className='flex justify-center items-center gap-3 sm:gap-10 mt-10 mb-10'>
-            <img className='w-[64px] h-[64px]' src={Instagram} alt=''/>
-            <img className='w-[64px] h-[64px]' src={Telegram} alt=''/>
-            <img className='w-[64px] h-[64px]' src={Twitter} alt=''/>
-            <img className='w-[64px] h-[64px]' src={Facebook} alt=''/>
+            <a href='https://www.instagram.com/mychipzio/' target='_blank' rel="noreferrer">
+              <img className='w-[64px] h-[64px]' src={Instagram} alt=''/>
+            </a>
+            <a href='https://t.me/chipzio' target='_blank' rel="noreferrer">
+              <img className='w-[64px] h-[64px]' src={Telegram} alt=''/>
+            </a>
+            <a href='https://twitter.com/MyChipzio' target='_blank' rel="noreferrer">
+              <img className='w-[64px] h-[64px]' src={Twitter} alt=''/>
+            </a>
+            <a href='https://www.facebook.com/groups/mychipzio/' target='_blank' rel="noreferrer">
+              <img className='w-[64px] h-[64px]' src={Facebook} alt=''/>
+            </a>
+            
+            
+            
           </div>
         </div>
       </div>

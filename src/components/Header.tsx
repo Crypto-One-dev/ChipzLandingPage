@@ -23,7 +23,7 @@ const Header = ({showMenu}:menuProps) => {
     },
     {
       title: 'White Paper',
-      url: 'https://bridge.mychipz.com/'
+      url: 'https://mychipz.io/wp-content/uploads/2021/07/CHPZ-technical-whitepaper.pdf'
     },
   ]
   const isMobile = useMediaQuery({query: '(max-width: 640px)'})
