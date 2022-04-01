@@ -45,7 +45,6 @@ const Header = ({showMenu}:menuProps) => {
                   )
                 })
               }
-              <button className='bg-[#F7FAFC] rounded-[12px] text-[#CE2179] font-semibold text-[16px] shadow-[0px_6px_0px_#8F1754] px-8 py-2'>Connect</button>
             </div>
         }
         {
